@@ -11,7 +11,7 @@ module detector_borda (
     integer i;
     parameter N = 2;
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk or rst) begin
         if(rst) begin
             _detector = 2'b00;
             entrada_anterior = 2'b00;
